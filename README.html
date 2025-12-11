@@ -1,0 +1,37 @@
+<h1 id="stat-sds-user-guide"><img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" width="48"> Stat-SDS user guide</h1>
+<p>The present document is a user guide to the <code>Stat-SDS</code> workflow.</p>
+<h3 id="what-is-stat-sds">What is Stat-SDS?</h3>
+<p><code>Stat-SDS</code> is a network analysis software workflow that uses bootstrapping techniques for statistical robustness. It can be divided into two main steps: bootstrap replicate generation and <code>SDS</code> (Spectral Decomposition of the Signal) analysis. The output of the workflow are dysregulated networks, e.g. dysregulated gene expression networks.</p>
+<p>The <code>SDS</code> (Spectral Decomposition of the Signal) part of the <code>Stat-SDS</code> workflow has been adapted from the orignal <code>SDS</code> software tool developed by the Brain C Lab. <code>Stat-SDS</code> also comprises <code>python</code>, <code>R</code> and <code>shell</code> scripts to generate bootstrap replicates and for other tasks of the workflow.</p>
+<h3 id="stat-sds-workflow-explained">Stat-SDS workflow explained</h3>
+<ol type="1">
+<li><p>Starting from read count data (e.g. RNAseq counts) containing several (at least 10) experimental replicates (e.g. 10 mice for which a disease condition was tested), <code>Stat-SDS</code> generates a number of bootstrap replicates of the experiment (the number of replicates being set by the user). If the user choses to generate 3 bootstrap replicates of the experiment, the workflow will create 3 “mock” experiments to which the experimental replicates are randomly assigned with replacement.</p></li>
+<li><p>Next, DESEq2 analysis is performed on read count data of bootstrap replicates and on read count data of the original experiment in order to convert the read counts into Log Fold Change (LFC) values.</p></li>
+<li><p>The obtained LFC files are used as the input to the <code>SDS</code> part of the workflow, which returns dysregulated networks for the bootstrap replicates of the experiment and for the original experiment.</p></li>
+<li><p>The edges in the dysregulated networks corresponding to the bootstrap replicates are counted across replicates to determine in how many bootstrap replicate networks a given edge appears.</p></li>
+<li><p>Last, using a user-inputted threshold for edge presence, the dysregulated network corresponding to the original experiment is filtered to keep the edges that appear in at least the percentage of bootstrap replicate networks given by the threshold. That is, if a 80% edge presence threshold is chosen, only edges that are present in 80% of the bootstrap replicate networks will be kept for the final network.</p></li>
+</ol>
+<h3 id="stat-sds-folder-structure">Stat-SDS folder structure</h3>
+<p>The downloaded ZIP file contains this <code>README.md</code> file, a Jupyter notebook and several folders containing python scripts and example datasets.</p>
+<ul>
+<li><p><strong>EXAMPLE_INPUT_DATA</strong>: folder containing an example CSV file of RNAseq read counts. More precisely, the example file corresponds to data from <a href="https://pubmed.ncbi.nlm.nih.gov/32681824/">Lee et al. 2020</a> and contains 4 Huntington’s disease conditions (4 different mutation lengths, namely Q2, Q50, Q111, Q170 and Q175) and 10 replicates per disease condition.</p></li>
+<li><p><strong>mousenet_V2_filtered</strong>: folder containing an example bionetwork, more precisely the MousenetV2 network filtered to keep interactions whose confidence is larger than 0.4.</p></li>
+<li><p><strong>SCRIPTS</strong>: contains <code>python</code>, <code>R</code> and <code>shell</code> scripts necessary to run the <code>Jupyter</code> notebook of the workflow.</p></li>
+<li><p><strong>StatSDS_SCRIPTS</strong>: contains 6 python scripts that make up for the <code>Stat-SDS</code> analysis workflow core part.</p></li>
+<li><p><strong><code>StatSDS_workflow.ipynb</code></strong>: notebook to launch a <code>Stat-SDS</code> analysis instance for the example data file and bionetwork provided.</p></li>
+<li><p><strong><code>README.md</code></strong>: present user guide.</p></li>
+</ul>
+<h3 id="setting-up-the-stat-sds-analysis-environment">Setting up the Stat-SDS analysis environment</h3>
+<p>The <code>Stat-SDS</code> workflow is developped to partially run on a server with enough RAM. Parts of the workflow are run on the local computer and parts are run on a remote server.</p>
+<p>On the local computer, the user should have uncompressed the downloaded ZIP file, obtaining the <strong><code>StatSDS</code></strong> folder where the present file is stored and whose structure is described above. Intermediate files necessary for running the whole analysis are generated and stored in the <strong><code>StatSDS</code></strong> folder, as well as network analysis result files that are copied from the remote server after the analysis is therein performed.</p>
+<p>On the remote server, the user should create a folder named <strong><code>StatSDS</code></strong> and copy two things inside:</p>
+<ul>
+<li>The <strong>mousenet_V2_filtered</strong> folder with all of its content</li>
+<li>The contents of the <strong>StatSDS_SCRIPTS</strong> folder (6 python scripts)</li>
+</ul>
+<h3 id="running-the-stat-sds-analysis-through-the-jupyter-notebook">Running the Stat-SDS analysis through the Jupyter Notebook</h3>
+<p>The <strong><code>StatSDS_workflow.ipynb</code></strong> Jupyter Notebook can be followed in order to launch an <code>Stat-SDS</code> analysis. The Notebook includes step-by-step explanations so that the user can follow the workflow.</p>
+<h3 id="license">License</h3>
+<p>Introduce information regarding license</p>
+<h3 id="command-to-convert-md-file-to-html">Command to convert md file to html</h3>
+<p>pandoc -f markdown -t html README.md &gt; README.html</p>
