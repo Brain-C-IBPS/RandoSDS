@@ -5,20 +5,6 @@
 Rando-SDS is a network analysis software workflow that combines bootstrap replicates generation with Spectral Decomposition of the Signal (SDS) analysis to identify dysregulated networks, such as dysregulated gene expression networks.
 
 
-#####=================================================================#####
-#####       Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license          #####
-#####=============================================================#####
-#####               Copyright (C) Maialen Arrieta-Lobo, Christian Neri, and Lucile Megret #####
-#####                     Maialen Arrieta (maialen.arrieta_lobo@sorbonne-universite.fr) Christian Neri(christian.neri@inserm.fr) Lucile Mégret(lucile.megret@sorbonne-universite.fr) 2025                               #####
-#####========================#####   
-#####      This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 
-#####      International License. To view a copy of this license, visit 
-#####      http://creativecommons.org/licenses/by-nc-nd/4.0/ or send a letter to 
-#####      Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.  
-#####======================#####
-#####=====================#####
-
-
 ## Overview
 
 The workflow uses bootstrapping techniques to enhance the statistical robustness of network analysis. Starting from read count data (e.g., RNA-seq), Rando-SDS generates bootstrap replicates, performs differential expression analysis, identifies dysregulated networks, and filters results based on edge presence across replicates.
@@ -146,17 +132,26 @@ The SDS (Spectral Decomposition of the Signal) component of Rando-SDS is adapted
 
 [Additional attribution details to be added]
 
+## Authors
+
+- **Maialen Arrieta-Lobo** - maiarrietalobo"gmail.com
+- **Christian Neri** - christian.neri@upmc.fr
+- **Lucile Megret** - lucile.megret@sorbonne-universite.fr
+
+Brain-C Lab, Institut de Biologie Paris-Seine (IBPS)
+
 ## License
 
-Copyright (C) 2025 Maialen Arrieta-Lobo, Lucile Megret and Christian Neri
+Copyright (C) 2025 Maialen Arrieta-Lobo, Christian Neri and Lucile Megret
 
 This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/
+
 
 ## Support
 
 For questions, issues, or feedback:
 - Open an issue on GitHub
-- [Contact information to be added]
+- Contact the project maintainers (see [Authors](#authors))
 
 ## Contributing
 
