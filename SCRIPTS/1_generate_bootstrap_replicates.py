@@ -13,7 +13,7 @@ that must more than one replicate.
 ------------------------------------------------------------------------------
 
 Contributors (alphabetic order): Maialen Arrieta-Lobo (1) 
-                                 Lucile Mégret
+                                 Lucile Mégret (1)
                                  Christian Neri (1)
     
 Laboratories:   
