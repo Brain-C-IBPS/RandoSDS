@@ -26,7 +26,7 @@ Affiliations:
 (1) Institut National de la Santé et de la Recherche Médicale (INSERM)
 
 ==============================================================================
-|  Copyright (C) 2023 Maialen Arrieta-Lobo, Lucile Mégret and Christian Neri | 
+|  Copyright (C) 2025 Maialen Arrieta-Lobo, Lucile Mégret and Christian Neri | 
 ==============================================================================
 |                                                                            |
 |  This work is licensed under the Creative Commons                          | 
