@@ -134,7 +134,7 @@ The SDS (Spectral Decomposition of the Signal) component of Rando-SDS is adapted
 
 ## Authors
 
-- **Maialen Arrieta-Lobo** - maiarrietalobo"gmail.com
+- **Maialen Arrieta-Lobo** - maiarrietalobo@gmail.com
 - **Christian Neri** - christian.neri@upmc.fr
 - **Lucile Megret** - lucile.megret@sorbonne-universite.fr
 
