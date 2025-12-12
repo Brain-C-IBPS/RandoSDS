@@ -20,7 +20,7 @@ ENSEMBL IDs to gene symbols.
 ------------------------------------------------------------------------------
 
 Contributors (alphabetic order): Maialen Arrieta-Lobo (1) 
-                                 Lucile Mégret
+                                 Lucile Mégret (1)
                                  Christian Neri (1)
     
 Laboratories:   
