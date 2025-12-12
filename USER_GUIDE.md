@@ -12,11 +12,14 @@ The present document is a user guide to the `Rando-SDS` workflow.
 The `SDS` (Spectral Decomposition of the Signal) part of the `Rando-SDS` workflow has been adapted from the orignal `SDS` software tool developed by the Brain C Lab. `Rando-SDS` also comprises `python`, `R` and `shell` scripts to generate bootstrap replicates and for other tasks of the workflow. 
 
 #####=================================================================#####
+
 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license
 
 #####=============================================================#####
+
 Copyright (C) Maialen Arrieta-Lobo, Christian Neri, and Lucile Megret
 Maialen Arrieta (maialen.arrieta_lobo@sorbonne-universite.fr) Christian Neri(christian.neri@inserm.fr) Lucile Mégret(lucile.megret@sorbonne-universite.fr) 2025
+
 #####========================#####
 
 ### Rando-SDS workflow explained
