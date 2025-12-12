@@ -15,6 +15,7 @@ ENSEMBL IDs to gene symbols
 ------------------------------------------------------------------------------
 
 Contributors (alphabetic order): Maialen Arrieta-Lobo (1) 
+                                 Lucile Mégret (1)
                                  Christian Neri (1)
     
 Laboratories:   
@@ -27,7 +28,7 @@ Affiliations:
 (1) Institut National de la Santé et de la Recherche Médicale (INSERM)
 
 ==============================================================================
-|      Copyright (C) 2023 Maialen Arrieta-Lobo and Christian Neri            | 
+| Copyright (C) 2023 Maialen Arrieta-Lobo, Lucile Mégret and Christian Neri  | 
 ==============================================================================
 |                                                                            |
 |  This work is licensed under the Creative Commons                          | 
