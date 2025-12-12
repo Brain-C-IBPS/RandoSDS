@@ -8,7 +8,7 @@ Rando-SDS is a network analysis software workflow that combines bootstrap replic
 #####=================================================================#####
 #####       Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license          #####
 #####=============================================================#####
-#####               Copyright (C) Maialen Arrieta-Lobo, Francesca Farina, Tamara Monteagudo Aboy, Megan Mair, Cloé Mendoza, Huy Tran, Jeff Aaronson, Jim Rosinski, Lisa Ellerby, Emmanuel Brouillet, Juan Botas, Christian Neri, and Lucile Megret #####
+#####               Copyright (C) Maialen Arrieta-Lobo, Christian Neri, and Lucile Megret #####
 #####                     Maialen Arrieta (maialen.arrieta_lobo@sorbonne-universite.fr) Christian Neri(christian.neri@inserm.fr) Lucile Mégret(lucile.megret@sorbonne-universite.fr) 2024                               #####
 #####========================#####
 #      
