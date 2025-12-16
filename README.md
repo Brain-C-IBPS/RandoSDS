@@ -4,6 +4,8 @@
 
 Rando-SDS is a network analysis software workflow that combines bootstrap replicates generation with Spectral Decomposition of the Signal (SDS) analysis to identify dysregulated networks, such as dysregulated gene expression networks.
 
+[![bioRxiv](https://img.shields.io/badge/bioRxiv-preprint-b31b1b)](https://doi.org/10.1101/your.preprint.doi)
+
 
 ## Overview
 
@@ -119,7 +121,7 @@ The workflow generates:
 
 If you use Rando-SDS in your research, please cite:
 
-[Citation information to be added]
+Arrieta-Lobo M, Farina F, Monteagudo Aboy T, Mair M, Mendoza C, Tran H, Aaronson J, Rosinski J, Ellerby L, Brouillet E, Botas J, Neri C, Megret L. (2024). [Modeling the effects of Huntington disease on age-related genes reveals CXXC4 as an epigenetic target to restore health and excitability of Drd1-expressing striatal neurons]. bioRxiv. https://doi.org/10.1101/your.preprint.doi
 
 ### Example Data Citation
 
