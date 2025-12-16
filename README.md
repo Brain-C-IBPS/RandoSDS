@@ -4,7 +4,7 @@
 
 Rando-SDS is a network analysis software workflow that combines bootstrap replicates generation with Spectral Decomposition of the Signal (SDS) analysis to identify dysregulated networks, such as dysregulated gene expression networks.
 
-[![bioRxiv](https://img.shields.io/badge/bioRxiv-preprint-b31b1b)](https://doi.org/10.1101/your.preprint.doi)
+[![bioRxiv](https://img.shields.io/badge/bioRxiv-preprint-b31b1b)](https://www.biorxiv.org/content/10.64898/2025.12.12.693965v1)
 
 
 ## Overview
